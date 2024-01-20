@@ -1,3 +1,3 @@
 # EventAr
-A simple forum made in php
-this forum was made for educative purposes
+A simple forum made in php.  
+This forum was made for educative purposes
