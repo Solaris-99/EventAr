@@ -1,0 +1,243 @@
+html, body{
+    min-height: 80vh;
+    position:relative;
+}
+
+#navbar + section{
+    margin-top: 6rem;
+}
+
+#navbar{
+    margin-bottom: 1rem;
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
+    top:0;
+}
+#navbar a{
+    color:white;
+    text-decoration: none;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    margin: 5px;
+}
+
+#navbar li{
+    margin-right: 8px;
+}
+
+form label, form input{
+    display: block;
+    margin-bottom: 4px;
+    width: 100%;
+}
+
+form input[type=submit]{
+    width: initial;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.w-mx-content{
+    width: max-content;
+}
+
+.resize-none{
+    resize: none !important;
+}
+
+.m-h-48px{
+    min-height: 48px;
+}
+
+
+#menu-list{
+    list-style: none;
+    position:fixed;
+    z-index: 9999;
+    background-color: #0d6efd ;
+    display: none;
+    height: 100vh;
+    right: -3rem;
+}
+
+#menu-list li {
+
+    position: relative;
+    margin-top: 1rem;
+    margin-left:0;
+    right: 1.5rem;
+    
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 999px;
+}
+
+.my-account-text {
+    cursor: pointer;
+}
+
+
+#search-bar{
+    border: none;
+    outline: none;
+}
+
+.outline-0{
+    outline:none;
+}
+
+
+
+a{
+    text-decoration: none;
+    font-weight: 525;
+}
+
+.nav-responsive{
+    display: none;
+}
+
+#navbar form{
+    width: 20rem;
+    height: 4rem;
+}
+
+#nav-responsive-lists{
+    width: 13rem;
+    display: none;
+    height: 100vh;
+    position:fixed;
+    z-index: 9999;
+    background-color:#0d6efd;
+    right: -3rem;
+    top: 5rem;
+}
+
+#nav-responsive-lists ul{
+    list-style: none;
+}
+
+#nav-responsive-lists li{
+    position: relative;
+    margin-top: 1rem;
+    margin-left:0;
+    right: 1.5rem;
+}
+#user-data{
+    display: flex;
+    justify-content: space-between;
+}
+
+#header{
+    background-image: url("../public/img/fondo.jpeg");
+    background-size: cover;
+    background-repeat: none;
+    background-position: center center;
+    padding-top:10rem;
+    padding-bottom:5rem;
+    position: relative;
+    top:-1rem;
+    color: white;
+}
+
+#header-comp{
+    backdrop-filter: brightness(50%) saturate(25%) blur(2px);
+    border-radius: 10px;
+    width: 85%;
+    display: flex;
+}
+#header-text{
+    width: 50%;
+    margin-left:2rem;
+}
+
+#web-footer{
+    background-color: #0d6efd;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    color: white;
+    position: absolute;
+    bottom:-6rem;
+    width: 100%;
+}
+
+.user-info{
+    margin-right: 1rem;
+}
+
+.card-img-top{
+    height: 160px;
+    object-fit: cover;
+}
+
+.card-title{
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-bottom:5px;
+}
+
+.mega-rounded{
+    border-radius: 999px;
+}
+.profile-pic{
+    max-width: 100px;
+    max-height: 100px;
+    margin:auto;
+}
+.flatpickr-wrapper {
+    width: 100%;
+}
+
+@media (min-width: 1200px){
+    #navbar form{
+        width: 50%;
+    }
+}
+
+@media (max-width: 800px){
+    .nav-responsive{
+        display: block;
+    }
+    #nav-responsive-lists{
+        display: none;
+    }
+
+    .nav-desk{
+        display: none;
+    }
+
+    #navbar form{
+        margin-left: 2rem;
+        width: 75%;
+    }
+}
+
+@media (max-width: 500px){
+    #user-data{
+        display: block;
+        justify-content: initial;    
+    }
+
+    #user-data + a{
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 400px){
+    #header-comp{
+        display: block;
+        padding: 5px;
+    }
+    #header-text{
+        width: 100%;
+    }
+}
